@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 20% 98%;
+    --foreground: 220 20% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 14%;
+
+    --primary: 216 50% 22%;
+    --primary-foreground: 40 20% 98%;
+
+    --secondary: 220 14% 94%;
+    --secondary-foreground: 220 20% 14%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 10% 46%;
+
+    --accent: 216 50% 22%;
+    --accent-foreground: 40 20% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 14% 90%;
+    --input: 220 14% 90%;
+    --ring: 216 50% 22%;
+
+    --radius: 0.5rem;
+
+    /* Custom tokens */
+    --surface-warm: 38 25% 96%;
+    --surface-elevated: 0 0% 100%;
+    --accent-soft: 216 50% 96%;
+    --accent-medium: 216 40% 50%;
+    --text-secondary: 220 10% 44%;
+    --text-tertiary: 220 8% 58%;
+    --shadow-card: 0 1px 2px 0 hsl(220 20% 14% / 0.03), 0 2px 8px -2px hsl(220 20% 14% / 0.05);
+    --shadow-card-hover: 0 2px 6px 0 hsl(220 20% 14% / 0.06), 0 6px 20px -4px hsl(220 20% 14% / 0.08);
+    --shadow-nav: 0 1px 2px 0 hsl(220 20% 14% / 0.04);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply py-16 md:py-20 px-4;
+  }
+
+  .container-narrow {
+    @apply max-w-5xl mx-auto;
+  }
+}
