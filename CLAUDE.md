@@ -1,22 +1,24 @@
-# Project Analysis and Conventions
+# Project Documentation
 
-## Project Analysis
-- This project focuses on providing a clean and responsive landing page.
-- The design is minimalistic, ensuring a fast loading time and great user experience.
+## Introduction
+This project aims to provide a comprehensive solution for the landing page design, focusing on user experience and modern web standards.
 
-## Conventions
-1. **Directory Structure**: Maintain a clear and organized directory structure.
-   - `assets/`: for images, styles, and scripts.
-   - `index.html`: the main HTML file for the landing page.
+## Features
+- Responsive design
+- Cross-browser compatibility
+- SEO optimized
 
-2. **Code Formatting**: Follow standard coding practices to ensure code readability.
-   - Use 2 spaces for indentation.
-   - Include comments where necessary to explain complex logic.
+## Installation
+1. Clone the repository: `git clone https://github.com/zaharovaleksey/landing_test.git`
+2. Navigate to the project directory: `cd landing_test`
+3. Install dependencies: `npm install`
 
-3. **Commit Messages**: Write meaningful commit messages, starting with a capital letter, in the imperative mood.
-   - Example: `Fix bug in the navbar responsiveness`
+## Usage
+- To start the project, run: `npm start`
+- Open your browser and navigate to `http://localhost:3000`
 
-4. **Pull Requests**: Create pull requests for all significant changes and ensure proper code review before merging.
+## Contributing
+Feel free to contribute! Please open an issue or submit a pull request.
 
-## Conclusion
-Following these conventions will maintain the quality and professionalism of the project, facilitating future collaborations and enhancements.
+## License
+This project is licensed under the MIT License.
